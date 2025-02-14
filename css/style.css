@@ -1,0 +1,259 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between logo and title */
+}
+
+.logo-title img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-title h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+  border-radius: 5px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Adjust number column width */
+th:nth-child(1), td:nth-child(1) {
+  width: 50px; /* Adjust width for the number column */
+  text-align: left; /* Align the numbers to the left */
+}
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* General styling for form-container */
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 80px; /* Add padding to the bottom so the button is not hidden */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form field styling */
+.form-field {
+  display: flex;
+  align-items: center; /* Vertically align the label and input */
+  margin-bottom: 15px; /* Adds space between each label-input pair */
+}
+
+.form-field label {
+  width: 150px; /* Set a fixed width for labels */
+  margin-right: 10px; /* Space between label and input */
+  text-align: right; /* Align text to the right */
+}
+
+.form-field input,
+.form-field textarea {
+  flex: 1; /* Make input/textarea take up remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-field textarea {
+  height: 80px; /* Set a height for textareas */
+}
+
+select {
+  padding: 10px 15px; /* Adjust the padding: top/bottom and left/right */
+  font-size: 16px; /* Adjust the font size */
+  border-radius: 5px; /* Optional: to add rounded corners */
+  border: 1px solid #ccc; /* Optional: border style */
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Changed from fixed to relative */
+  margin-top: auto; /* Ensure footer is at the bottom */
+  width: 100%;
+  clear: both;
+}
+
+/* General section styling */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Patient Information Section */
+#patient-info {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#patient-info input,
+#patient-info textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Medical Concerns Section */
+#medical-concerns {
+  background-color: #e9f7f3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#medical-concerns input,
+#medical-concerns textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#registerBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#registerBtn:hover {
+  background-color: #45a049;
+}
+
+/**patient_list**/
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  color: black;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+#searchInput {
+  width: 250px;  /* Set a fixed width */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px; /* Space between the search bar and the table */
+  display: block;  /* Ensures it's not inline */
+  margin-left: auto;
+  margin-right: auto; /* Centers the input box */
+}
